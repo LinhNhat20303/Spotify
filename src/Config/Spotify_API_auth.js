@@ -30,7 +30,9 @@ export const getTokenFromResponse = () => {
     }, {});
 };
 
-//
+// Access token
+export const ACCESS_TOKEN =
+  "BQBAMWjcc7VyOUGWkKASa-FWPXJffKIV7iMOD15zXGrAMFsr6qnoLFLlqv2YSGk2qgC_bG9segWKQRX2zUj_Juawzgi5HPDiFeUp_71E2WA704sZFlM2gww5XCEwpe04OM4iPIG37Xl6XqqlUFry4rwc44z1C-O831Ql-OkUVFLhCn4vxz6GbFzMVz14oInsepUekAV1AGgjruOYNEBTqHzjR_Erpjfg";
 export const URL_TO_LOGIN_API = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
   "%20"
 )}&response_type=token&show_dialog=true`;
