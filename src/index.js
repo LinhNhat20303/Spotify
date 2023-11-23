@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { StateProvider } from "./Config/StateProvider";
+import reducer, { initialState } from "./Config/reducer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
