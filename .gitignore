@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.yarn
+/Users/phamnhatlinh/Spotify Clone /spotify/.yarn
 /.pnp
 .pnp.js
 
