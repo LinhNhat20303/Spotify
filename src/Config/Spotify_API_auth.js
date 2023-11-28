@@ -3,7 +3,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 
 //This client I have create from the Spotify Docs
-const clientId = "92b2cca5889a456f87fc5c2558f6d70c";
+const clientId = "3061e17d5f3945ceb901c3917b8fc94e";
 
 //the RedirectURI is the domain where the Spotify App host
 const redirectUri = "http://localhost:3000/";
@@ -35,6 +35,4 @@ export const URL_TO_LOGIN_API = `${authEndpoint}?client_id=${clientId}&redirect_
   "%20"
 )}&response_type=token&show_dialog=true`;
 
-// Access token
-export const ACCESS_TOKEN =
-  "BQBAMWjcc7VyOUGWkKASa-FWPXJffKIV7iMOD15zXGrAMFsr6qnoLFLlqv2YSGk2qgC_bG9segWKQRX2zUj_Juawzgi5HPDiFeUp_71E2WA704sZFlM2gww5XCEwpe04OM4iPIG37Xl6XqqlUFry4rwc44z1C-O831Ql-OkUVFLhCn4vxz6GbFzMVz14oInsepUekAV1AGgjruOYNEBTqHzjR_Erpjfg";
+export const URL_TO_API = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=token&show_dialog=true`;

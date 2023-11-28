@@ -1,8 +1,7 @@
 import React from "react";
-import "./Body.css";
-import Header from "../../Component/js/Header.js";
-import { useStateValue } from "./StateProvider";
-// import SongRow from "./SongRow";
+import "../css/body.css";
+import Header from "../../Component/js/Header";
+import SongRow from "../../Component/js/SongRow";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
@@ -32,8 +31,7 @@ function Body() {
         </div>
 
         {discover_weekly?.tracks.items.map((item) => (
-          //   <SongRow playSong={playSong} track={item.track} />
-          <div className="item"></div>
+          <SongRow playSong={playSong} track={item.track} />
         ))}
       </div>
     </div>
