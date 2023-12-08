@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import SideBar from "../../Component/js/SideBar";
+import Body from "./Body";
+import "../css/HomePage.css";
+import { useStateValue } from "../../Config/StateProvider";
+import { Avatar } from "@material-ui/core";
+import Footer from "../../Component/js/Footer";
 
-function HomePage() {
-  window.onSpotifyWebPlaybackSDKReady = () => {
-    const token =
-      "BQCUdG_vKObDzx2AAgKp10fYCeQWHosev9tCXaF0-9ER8UD93QC1zj68DbYg7bbhv8g3lZV5CE0yRAC7kMEMXCghkNmAClWp7ZBEZakfr9ELDGqNxvLVBzDBOBR5yk_BfSSX6VxkgJ8WAdcIRv7WYR1jAzCzSaRjOPkReoW8BvJ_r8KYSwht9yoUQIvpw1dJzDT4snv62g34zzr9FnDpDkLnR9boXzNa";
-    const player = new Spotify.Player({
-      name: "Web Playback SDK Quick Start Player",
-      getOAuthToken: (cb) => {
-        cb(token);
-      },
-      volume: 0.5,
-    });
-  };
-  return <div>HomePage</div>;
+function HomePage({ spotify }) {
+  const [{ user }, dispatch] = useStateValue();
+  return (
+    <div>
+      {/* <Body /> */}
+      <div className="player">
+        <div className="player__body">
+          <SideBar />
+          {/* <Avatar alt={user?.display_name} src={user?.images[0].url} />
+          <h4>{user?.display_name}</h4> */}
+          <Body spotify={spotify} />
+        </div>
+        <Footer />
+      </div>
+    </div>
+  );
 }
 export default HomePage;

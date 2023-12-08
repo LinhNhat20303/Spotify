@@ -22,4 +22,46 @@
      object-fit: contain;
   height: 70px;
   padding: 10px;
+}
+
+.nav {
+  background-color: #121212;
+  border-radius: 7px;
+}
+
+.nav__SearchHome {
+  margin-bottom: 10px;
+}
+
+.nav__Library {
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__Icon {
+  color: #808080;
+  padding-top: 7px;
+  padding-right: 10px;
+}
+.nav__Icon .nav__Icon__Add {
+  padding-right: 12px;
+}
+
+.nav__Category {
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav__Category .category {
+  margin-right: 5px;
+  padding: 4px 10px;
+  border-radius: 50px;
+  background-color: #080808;
+}
+
+.bottom {
+  height: 100%;
 }/*# sourceMappingURL=SideBar.css.map */
