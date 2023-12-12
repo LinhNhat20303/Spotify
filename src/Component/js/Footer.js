@@ -12,18 +12,24 @@ import { Grid, Slider } from "@material-ui/core";
 import "../css/Footer.css";
 
 function Footer() {
+  const item = [];
+  function skipNext() {}
+  function playing() {}
+  function handlePlayPause() {}
+  function handlePlayPause() {}
+  function skipPrevious() {}
   return (
     <div className="footer">
       <div className="footer__left">
         <img
           className="footer__albumLogo"
-          src={item?.album.images[0].url}
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fdaiphatthanh.sound%2Fvideos%2Fl%25E1%25BA%25A1-l%25C3%25B9ng-v%25C5%25A9-live%2F1196409644212835%2F&psig=AOvVaw21aGj6fLA1imrT4Jpar0Gu&ust=1702470210820000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPjwp_PxiYMDFQAAAAAdAAAAABAI"
           alt={item?.name}
         />
         {item ? (
           <div className="footer__songInfo">
-            <h4>{item.name}</h4>
-            <p>{item.artists.map((artist) => artist.name).join(", ")}</p>
+            <h4>La Lung</h4>
+            <p>Pham Nhat Linh</p>
           </div>
         ) : (
           <div className="footer__songInfo">
